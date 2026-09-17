@@ -1,0 +1,74 @@
+{
+  "evaluation_type": "deterministic_structural_scientific_checks",
+  "evaluations": [
+    {
+      "case": "pioneer",
+      "classification": "PASS",
+      "score": 91.7,
+      "passed_checks": 11,
+      "total_checks": 12,
+      "checks": {
+        "contains_thermal": true,
+        "contains_recoil": true,
+        "contains_hypoth": true,
+        "contains_critic": false,
+        "contains_falsif": true,
+        "contains_test": true,
+        "evidence_present": true,
+        "anomaly_present": true,
+        "hypotheses_present": true,
+        "critic_present": true,
+        "testing_present": true,
+        "hypothesis_critic_contract": true
+      }
+    },
+    {
+      "case": "opera",
+      "classification": "PASS",
+      "score": 91.7,
+      "passed_checks": 11,
+      "total_checks": 12,
+      "checks": {
+        "contains_timing": true,
+        "contains_systematic": true,
+        "contains_hypoth": true,
+        "contains_critic": false,
+        "contains_falsif": true,
+        "contains_test": true,
+        "evidence_present": true,
+        "anomaly_present": true,
+        "hypotheses_present": true,
+        "critic_present": true,
+        "testing_present": true,
+        "hypothesis_critic_contract": true
+      }
+    },
+    {
+      "case": "flyby",
+      "classification": "PASS",
+      "score": 91.7,
+      "passed_checks": 11,
+      "total_checks": 12,
+      "checks": {
+        "contains_null": true,
+        "contains_systematic": true,
+        "contains_hypoth": true,
+        "contains_critic": false,
+        "contains_falsif": true,
+        "contains_test": true,
+        "evidence_present": true,
+        "anomaly_present": true,
+        "hypotheses_present": true,
+        "critic_present": true,
+        "testing_present": true,
+        "hypothesis_critic_contract": true
+      }
+    }
+  ],
+  "summary": {
+    "cases": 3,
+    "passed": 3,
+    "partial": 0,
+    "failed": 0
+  }
+}

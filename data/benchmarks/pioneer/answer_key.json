@@ -1,0 +1,25 @@
+{
+  "case_id": "BENCH_PIONEER_01",
+  "historical_status": "The anomaly is strongly supported as having a conventional spacecraft thermal origin.",
+  "expected_explanation": "Anisotropic thermal radiation produces recoil on the spacecraft; detailed thermal modelling and recovered telemetry support this explanation.",
+  "acceptable_concepts": [
+    "thermal recoil",
+    "anisotropic thermal radiation",
+    "thermal radiation pressure",
+    "asymmetric thermal emission",
+    "spacecraft thermal recoil"
+  ],
+  "required_reasoning": [
+    "Recognize the persistent residual.",
+    "Notice the relevance of onboard heat and spacecraft geometry.",
+    "Prefer a conventional spacecraft systematic over exotic physics.",
+    "Propose a quantitative thermal-recoil test or detailed thermal model.",
+    "Avoid treating the initial anomaly as evidence for new physics."
+  ],
+  "failure_modes": [
+    "claims new physics without ruling out systematics",
+    "treats correlation as proof",
+    "fails to consider thermal recoil",
+    "states certainty without identifying a discriminating test"
+  ]
+}

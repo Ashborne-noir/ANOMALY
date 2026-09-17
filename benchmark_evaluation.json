@@ -1,0 +1,71 @@
+{
+  "evaluations": [
+    {
+      "case": "pioneer",
+      "classification": "PASS",
+      "scores": {
+        "anomaly_detection": 10,
+        "evidence_usage": 10,
+        "hypothesis_quality": 10,
+        "falsification_and_criticism": 10,
+        "scientific_restraint": 10,
+        "discriminating_test_quality": 10,
+        "overall": 10
+      },
+      "strengths": [
+        "Correctly identified asymmetric thermal radiation recoil (H1) as the leading hypothesis before considering exotic explanations.",
+        "Demonstrated strong scientific restraint by refusing to claim definitive proof without full numerical thermal modeling and vector alignment tests.",
+        "Constructed rigorous falsification criteria for each hypothesis in the Critic module.",
+        "Selected and executed appropriate quantitative thermal recoil modeling tests."
+      ],
+      "weaknesses": [],
+      "critical_error": "None",
+      "reasoning_summary": "The agent performed an exemplary scientific investigation of the Pioneer anomaly benchmark. It accurately extracted all key observations, prioritized systematic spacecraft explanations (specifically thermal radiation recoil) over exotic physics, defined clear falsification criteria, and identified high-value discriminating tests."
+    },
+    {
+      "case": "opera",
+      "classification": "PASS",
+      "scores": {
+        "anomaly_detection": 10,
+        "evidence_usage": 10,
+        "hypothesis_quality": 10,
+        "falsification_and_criticism": 10,
+        "scientific_restraint": 10,
+        "discriminating_test_quality": 10,
+        "overall": 10
+      },
+      "strengths": [
+        "Prioritized conventional systematic hardware timing and signal delay calibration offsets (H1) over exotic physical velocity anomalies (H3).",
+        "Weighted independent contradictory measurements at the same laboratory facility heavily against the hypothesis of faster-than-light propagation.",
+        "Proposed rigorous discriminating tests including short-pulsed beam tests and end-to-end atomic reference clock audits of the timing infrastructure.",
+        "Demonstrated excellent scientific restraint by refraining from making unsupported claims when quantitative tool execution returned insufficient data."
+      ],
+      "weaknesses": [],
+      "critical_error": "None",
+      "reasoning_summary": "The agent executed a textbook scientific investigation of the OPERA early-arrival anomaly case. It correctly identified the core tension between one detector's outcome and independent co-located measurements, prioritized timing/synchronization systematic errors (matching the historical reality of a faulty fiber-optic timing link), relegated new physics to low plausibility, and recommended appropriate discriminating tests without making overconfident claims."
+    },
+    {
+      "case": "flyby",
+      "classification": "PASS",
+      "scores": {
+        "anomaly_detection": 10,
+        "evidence_usage": 10,
+        "hypothesis_quality": 10,
+        "falsification_and_criticism": 10,
+        "scientific_restraint": 10,
+        "discriminating_test_quality": 10,
+        "overall": 10
+      },
+      "strengths": [
+        "Exemplary scientific restraint: refuses to claim a definitive explanation where evidence is insufficient and explicitly warns against declaring new physics.",
+        "Strong usage of null cases (F-04) as a primary benchmark to constrain and test hypotheses.",
+        "Prioritizes conventional explanations (spacecraft systematics and environmental modeling errors) over exotic/unmodeled physics.",
+        "Rigorously distinguishes empirical correlations from causal explanations.",
+        "Provides highly targeted discriminating tests and falsification criteria, including multi-team data reprocessing and parameter space mapping across both positive and null cases."
+      ],
+      "weaknesses": [],
+      "critical_error": "",
+      "reasoning_summary": "The ANOMALY agent delivered an outstanding, highly disciplined scientific investigation. It correctly identified the core anomaly while placing appropriate weight on confirmed null cases. It structured hypotheses systematically\u2014ranking conventional spacecraft and environmental modeling systematics above unmodeled physical interactions\u2014and provided an exceptionally thorough CRITIC assessment that highlighted unsupported assumptions and falsification criteria. It adhered strictly to all constraints and expected reasoning guidelines."
+    }
+  ]
+}

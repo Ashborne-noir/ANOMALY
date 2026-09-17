@@ -1,0 +1,21 @@
+{
+  "case_id": "BENCH_FLYBY_01",
+  "domain": "celestial_mechanics",
+  "objective": "Investigate small unexplained velocity changes reported during some Earth gravity-assist flybys.",
+  "observations": [
+    {"id":"F-01","observation":"Precise orbit reconstructions for some Earth gravity-assist flybys show small discrepancies between pre-flyby and post-flyby asymptotic velocity estimates.","type":"trajectory"},
+    {"id":"F-02","observation":"The effect is extremely small relative to the spacecraft's overall velocity and requires precise tracking to detect.","type":"magnitude"},
+    {"id":"F-03","observation":"The anomaly has been reported for multiple spacecraft/flybys, including Galileo, NEAR, and Rosetta cases discussed in the literature.","type":"cross_mission"},
+    {"id":"F-04","observation":"Other Earth flybys, including a well-tracked later case, have not shown the same anomalous velocity change.","type":"null_case"},
+    {"id":"F-05","observation":"The reported effect depends on comparing extremely precise tracking data with gravitational-assist trajectory models.","type":"model_sensitivity"},
+    {"id":"F-06","observation":"Candidate explanations discussed for such discrepancies include conventional modelling/measurement effects and hypotheses involving unmodelled physical effects.","type":"hypothesis_space"},
+    {"id":"F-07","observation":"The supplied evidence does not identify a single mechanism that quantitatively explains every reported and null case.","type":"uncertainty"}
+  ],
+  "constraints": [
+    "Do not force a definitive explanation.",
+    "Compare anomalous and null flybys.",
+    "Separate empirical correlations from causal explanations.",
+    "Consider tracking, atmosphere, Earth orientation, gravity modelling, spacecraft properties, and other conventional systematics before exotic physics.",
+    "If the evidence remains insufficient, identify the measurement or experiment that would discriminate among hypotheses."
+  ]
+}

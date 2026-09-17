@@ -1,0 +1,14 @@
+Research objective:
+Investigate why the efficiency of Demo Material X decreases above 400 C.
+
+Observations:
+Efficiency remains stable at moderate temperature.
+Efficiency decreases significantly above 400 C.
+The effect appears repeatable.
+
+Expected behavior:
+Efficiency should remain approximately stable.
+
+Constraints:
+Do not exceed 650 C.
+Distinguish measurement artifacts from physical mechanisms.

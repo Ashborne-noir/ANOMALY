@@ -1,0 +1,69 @@
+{
+  "case_id": "PIONEER_PARTIAL_01",
+  "domain": "spacecraft_navigation",
+
+  "objective": "Investigate a small persistent discrepancy between predicted and observed spacecraft acceleration.",
+
+  "columns": [
+    "time_days",
+    "predicted_acceleration_m_s2",
+    "observed_acceleration_m_s2",
+    "thermal_power_watts"
+  ],
+
+  "data": [
+    {
+      "time_days": 0,
+      "predicted_acceleration_m_s2": 0.0,
+      "observed_acceleration_m_s2": 8.0e-10,
+      "thermal_power_watts": 2100
+    },
+    {
+      "time_days": 50,
+      "predicted_acceleration_m_s2": 0.0,
+      "observed_acceleration_m_s2": 8.4e-10,
+      "thermal_power_watts": 2075
+    },
+    {
+      "time_days": 100,
+      "predicted_acceleration_m_s2": 0.0,
+      "observed_acceleration_m_s2": 7.9e-10,
+      "thermal_power_watts": 2050
+    },
+    {
+      "time_days": 150,
+      "predicted_acceleration_m_s2": 0.0,
+      "observed_acceleration_m_s2": 7.5e-10,
+      "thermal_power_watts": 2025
+    },
+    {
+      "time_days": 200,
+      "predicted_acceleration_m_s2": 0.0,
+      "observed_acceleration_m_s2": 7.2e-10,
+      "thermal_power_watts": 2000
+    },
+    {
+      "time_days": 250,
+      "predicted_acceleration_m_s2": 0.0,
+      "observed_acceleration_m_s2": 6.8e-10,
+      "thermal_power_watts": 1975
+    },
+    {
+      "time_days": 300,
+      "predicted_acceleration_m_s2": 0.0,
+      "observed_acceleration_m_s2": 6.5e-10,
+      "thermal_power_watts": 1950
+    },
+    {
+      "time_days": 350,
+      "predicted_acceleration_m_s2": 0.0,
+      "observed_acceleration_m_s2": 6.2e-10,
+      "thermal_power_watts": 1925
+    }
+  ],
+
+  "hidden_context": {
+    "expected_behavior": "The observed acceleration decreases gradually as thermal power decreases.",
+    "evaluation_goal": "Detect the persistent residual and investigate its relationship with thermal power."
+  }
+}

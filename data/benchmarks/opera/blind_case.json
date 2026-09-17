@@ -1,0 +1,20 @@
+{
+  "case_id": "BENCH_OPERA_01",
+  "domain": "particle_physics_measurement",
+  "objective": "Investigate an apparent early-arrival anomaly in a long-baseline neutrino time-of-flight measurement.",
+  "observations": [
+    {"id":"O-01","observation":"A long-baseline experiment reports neutrino events arriving about 60 nanoseconds earlier than expected from the measured source-to-detector baseline and the speed of light.","type":"time_of_flight"},
+    {"id":"O-02","observation":"The apparent effect corresponds to a very small fractional timing difference but would have major theoretical implications if genuine.","type":"significance"},
+    {"id":"O-03","observation":"The result is based on synchronization between a source facility and a distant detector using GPS-linked timing equipment.","type":"instrumentation"},
+    {"id":"O-04","observation":"The measurement requires accurate determination of proton extraction time, detector timestamps, baseline distance, and clock synchronization.","type":"measurement_chain"},
+    {"id":"O-05","observation":"Independent measurements at the same distant laboratory using other detector systems report neutrino time-of-flight results consistent with the speed of light.","type":"independent_replication"},
+    {"id":"O-06","observation":"Short-pulsed source measurements can provide a more precise association between the emitted particle beam and the detected events.","type":"discriminating_test"}
+  ],
+  "constraints": [
+    "Do not assume faster-than-light propagation is the cause.",
+    "Investigate the complete timing and synchronization chain.",
+    "Give independent contradictory measurements substantial weight.",
+    "Distinguish a measurement anomaly from a new physical phenomenon.",
+    "Propose a test that can distinguish instrumentation error from genuine propagation physics."
+  ]
+}

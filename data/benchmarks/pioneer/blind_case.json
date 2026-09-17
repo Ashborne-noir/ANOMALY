@@ -1,0 +1,22 @@
+{
+  "case_id": "BENCH_PIONEER_01",
+  "domain": "spacecraft_navigation",
+  "objective": "Investigate a small persistent residual acceleration found in long-term Doppler tracking of two deep-space spacecraft.",
+  "observations": [
+    {"id":"P-01","observation":"Two deep-space spacecraft show a small persistent acceleration residual in trajectory fits.","type":"trajectory"},
+    {"id":"P-02","observation":"The residual is approximately directed toward the Sun in the commonly reported analysis, although its direction is not perfectly determined.","type":"direction"},
+    {"id":"P-03","observation":"The effect is small and persists over long tracking intervals.","type":"temporal"},
+    {"id":"P-04","observation":"The two spacecraft have broadly similar designs and both contain radioisotope power systems.","type":"cross_spacecraft"},
+    {"id":"P-05","observation":"The spacecraft continuously reject substantial internal heat into space.","type":"thermal"},
+    {"id":"P-06","observation":"The spacecraft geometry includes a large high-gain antenna and other surfaces that can emit or reflect thermal radiation asymmetrically.","type":"geometry"},
+    {"id":"P-07","observation":"The apparent residual changes gradually over time rather than behaving as an obviously random measurement offset.","type":"temporal"},
+    {"id":"P-08","observation":"The navigation model includes known gravitational and spacecraft forces, leaving a residual not initially explained by the model.","type":"model_residual"}
+  ],
+  "constraints": [
+    "Separate observations from explanations.",
+    "Test spacecraft-systematic explanations before proposing new physics.",
+    "Do not assume that a correlation proves causation.",
+    "Every major hypothesis must specify evidence that could falsify it.",
+    "If the supplied evidence is insufficient for a conclusion, state what measurement is needed."
+  ]
+}

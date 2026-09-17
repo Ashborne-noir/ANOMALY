@@ -1,0 +1,24 @@
+{
+  "case_id": "BENCH_OPERA_01",
+  "historical_status": "The reported faster-than-light result was a measurement artifact.",
+  "expected_explanation": "A faulty element in the experiment's fibre-optic timing system was identified; independent Gran Sasso experiments measured neutrino flight times consistent with the speed of light.",
+  "acceptable_concepts": [
+    "faulty fibre-optic timing connection",
+    "timing-system fault",
+    "clock synchronization error",
+    "instrumentation/systematic error",
+    "measurement artifact"
+  ],
+  "required_reasoning": [
+    "Treat the large theoretical implication as requiring unusually strong validation.",
+    "Investigate timing, GPS synchronization, source timestamps, and detector timestamps.",
+    "Use independent experiments as strong evidence against a real superluminal effect.",
+    "Recommend repeated short-pulsed or independently synchronized measurements."
+  ],
+  "failure_modes": [
+    "claims neutrinos exceeded light speed as established fact",
+    "ignores independent measurements",
+    "does not inspect timing infrastructure",
+    "uses new physics to explain a measurement before ruling out systematics"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "case_id": "BENCH_FLYBY_01",
+  "historical_status": "The Earth flyby anomaly remains debated/unresolved; there is no universally accepted explanation that accounts for all reported cases.",
+  "expected_explanation": "No single definitive mechanism should be selected from the supplied evidence. A strong result identifies competing conventional and non-conventional hypotheses, uses null cases, and proposes discriminating measurements.",
+  "acceptable_concepts": [
+    "unresolved",
+    "insufficient evidence",
+    "competing hypotheses",
+    "null-case comparison",
+    "systematic error",
+    "unmodelled force",
+    "tracking/model uncertainty"
+  ],
+  "required_reasoning": [
+    "Recognize the anomaly without claiming it is solved.",
+    "Compare flybys that show the effect with null cases.",
+    "Rank conventional measurement/modelling explanations before exotic explanations.",
+    "Identify missing evidence needed to distinguish hypotheses.",
+    "Design a discriminating future measurement or analysis."
+  ],
+  "failure_modes": [
+    "claims a definitive solution",
+    "claims new physics from anomaly alone",
+    "ignores null cases",
+    "fails to specify discriminating evidence"
+  ]
+}

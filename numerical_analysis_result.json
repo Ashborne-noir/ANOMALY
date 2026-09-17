@@ -1,0 +1,286 @@
+{
+  "status": "success",
+  "row_count": 8,
+  "numeric_columns": [
+    "time_days",
+    "predicted_acceleration_m_s2",
+    "observed_acceleration_m_s2",
+    "thermal_power_watts"
+  ],
+  "columns": {
+    "time_days": {
+      "statistics": {
+        "count": 8,
+        "mean": 175,
+        "median": 175.0,
+        "min": 0,
+        "max": 350,
+        "stdev": 122.47448713915891
+      },
+      "trend": {
+        "slope": 50.0,
+        "normalized_slope": 0.2857142857142857,
+        "direction": "increasing"
+      },
+      "outliers": {
+        "method": "z_score",
+        "threshold": 2.5,
+        "indices": [],
+        "count": 0
+      },
+      "persistence": {
+        "persistent": true,
+        "nonzero_count": 7,
+        "ratio": 0.875
+      }
+    },
+    "predicted_acceleration_m_s2": {
+      "statistics": {
+        "count": 8,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "stdev": 0.0
+      },
+      "trend": {
+        "slope": 0.0,
+        "normalized_slope": 0.0,
+        "direction": "stable"
+      },
+      "outliers": {
+        "method": "z_score",
+        "indices": [],
+        "count": 0
+      },
+      "persistence": {
+        "persistent": false,
+        "nonzero_count": 0,
+        "ratio": 0.0
+      }
+    },
+    "observed_acceleration_m_s2": {
+      "statistics": {
+        "count": 8,
+        "mean": 7.3125e-10,
+        "median": 7.35e-10,
+        "min": 6.2e-10,
+        "max": 8.4e-10,
+        "stdev": 7.754031209635409e-11
+      },
+      "trend": {
+        "slope": -3.059523809523809e-11,
+        "normalized_slope": -0.04183964183964183,
+        "direction": "decreasing"
+      },
+      "outliers": {
+        "method": "z_score",
+        "threshold": 2.5,
+        "indices": [],
+        "count": 0
+      },
+      "persistence": {
+        "persistent": true,
+        "nonzero_count": 8,
+        "ratio": 1.0
+      }
+    },
+    "thermal_power_watts": {
+      "statistics": {
+        "count": 8,
+        "mean": 2012.5,
+        "median": 2012.5,
+        "min": 1925,
+        "max": 2100,
+        "stdev": 61.237243569579455
+      },
+      "trend": {
+        "slope": -25.0,
+        "normalized_slope": -0.012422360248447204,
+        "direction": "decreasing"
+      },
+      "outliers": {
+        "method": "z_score",
+        "threshold": 2.5,
+        "indices": [],
+        "count": 0
+      },
+      "persistence": {
+        "persistent": true,
+        "nonzero_count": 8,
+        "ratio": 1.0
+      }
+    }
+  },
+  "correlations": [
+    {
+      "column_a": "time_days",
+      "column_b": "observed_acceleration_m_s2",
+      "pearson_r": -0.9665001322043762,
+      "strength": "strong",
+      "direction": "negative"
+    },
+    {
+      "column_a": "time_days",
+      "column_b": "thermal_power_watts",
+      "pearson_r": -1.0,
+      "strength": "strong",
+      "direction": "negative"
+    },
+    {
+      "column_a": "observed_acceleration_m_s2",
+      "column_b": "thermal_power_watts",
+      "pearson_r": 0.9665001322043762,
+      "strength": "strong",
+      "direction": "positive"
+    }
+  ],
+  "residuals": [
+    {
+      "observed_column": "observed_acceleration_m_s2",
+      "predicted_column": "predicted_acceleration_m_s2",
+      "available": true,
+      "residuals": [
+        8e-10,
+        8.4e-10,
+        7.9e-10,
+        7.5e-10,
+        7.2e-10,
+        6.8e-10,
+        6.5e-10,
+        6.2e-10
+      ],
+      "statistics": {
+        "count": 8,
+        "mean": 7.3125e-10,
+        "median": 7.35e-10,
+        "min": 6.2e-10,
+        "max": 8.4e-10,
+        "stdev": 7.754031209635409e-11
+      },
+      "trend": {
+        "slope": -3.059523809523809e-11,
+        "normalized_slope": -0.04183964183964183,
+        "direction": "decreasing"
+      },
+      "persistence": {
+        "persistent": true,
+        "nonzero_count": 8,
+        "ratio": 1.0
+      },
+      "outliers": {
+        "method": "z_score",
+        "threshold": 2.5,
+        "indices": [],
+        "count": 0
+      }
+    }
+  ],
+  "patterns": [
+    {
+      "type": "trend",
+      "column": "observed_acceleration_m_s2",
+      "evidence": {
+        "slope": -3.059523809523809e-11,
+        "normalized_slope": -0.04183964183964183,
+        "direction": "decreasing"
+      }
+    },
+    {
+      "type": "persistent_signal",
+      "column": "observed_acceleration_m_s2",
+      "evidence": {
+        "persistent": true,
+        "nonzero_count": 8,
+        "ratio": 1.0
+      }
+    },
+    {
+      "type": "trend",
+      "column": "thermal_power_watts",
+      "evidence": {
+        "slope": -25.0,
+        "normalized_slope": -0.012422360248447204,
+        "direction": "decreasing"
+      }
+    },
+    {
+      "type": "persistent_signal",
+      "column": "thermal_power_watts",
+      "evidence": {
+        "persistent": true,
+        "nonzero_count": 8,
+        "ratio": 1.0
+      }
+    },
+    {
+      "type": "strong_correlation",
+      "columns": [
+        "time_days",
+        "observed_acceleration_m_s2"
+      ],
+      "evidence": {
+        "column_a": "time_days",
+        "column_b": "observed_acceleration_m_s2",
+        "pearson_r": -0.9665001322043762,
+        "strength": "strong",
+        "direction": "negative"
+      }
+    },
+    {
+      "type": "strong_correlation",
+      "columns": [
+        "time_days",
+        "thermal_power_watts"
+      ],
+      "evidence": {
+        "column_a": "time_days",
+        "column_b": "thermal_power_watts",
+        "pearson_r": -1.0,
+        "strength": "strong",
+        "direction": "negative"
+      }
+    },
+    {
+      "type": "strong_correlation",
+      "columns": [
+        "observed_acceleration_m_s2",
+        "thermal_power_watts"
+      ],
+      "evidence": {
+        "column_a": "observed_acceleration_m_s2",
+        "column_b": "thermal_power_watts",
+        "pearson_r": 0.9665001322043762,
+        "strength": "strong",
+        "direction": "positive"
+      }
+    }
+  ],
+  "candidate_anomalies": [
+    {
+      "type": "persistent_residual",
+      "observed_column": "observed_acceleration_m_s2",
+      "predicted_column": "predicted_acceleration_m_s2",
+      "evidence": {
+        "statistics": {
+          "count": 8,
+          "mean": 7.3125e-10,
+          "median": 7.35e-10,
+          "min": 6.2e-10,
+          "max": 8.4e-10,
+          "stdev": 7.754031209635409e-11
+        },
+        "persistence": {
+          "persistent": true,
+          "nonzero_count": 8,
+          "ratio": 1.0
+        },
+        "trend": {
+          "slope": -3.059523809523809e-11,
+          "normalized_slope": -0.04183964183964183,
+          "direction": "decreasing"
+        }
+      }
+    }
+  ]
+}

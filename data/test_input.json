@@ -1,0 +1,46 @@
+{
+  "objective": "Investigate why the measured efficiency of a material decreases unexpectedly at high temperature.",
+  "evidence": {
+    "observations": [
+      "Efficiency is stable at moderate temperature.",
+      "Efficiency decreases above 400 C.",
+      "The effect is repeatable."
+    ],
+    "measurements": [
+      {
+        "temperature_C": 300,
+        "efficiency": 0.91
+      },
+      {
+        "temperature_C": 350,
+        "efficiency": 0.9
+      },
+      {
+        "temperature_C": 400,
+        "efficiency": 0.89
+      },
+      {
+        "temperature_C": 450,
+        "efficiency": 0.82
+      },
+      {
+        "temperature_C": 500,
+        "efficiency": 0.73
+      }
+    ],
+    "documents": [],
+    "raw_data": []
+  },
+  "experimental_context": {
+    "system": "Demo Material X",
+    "temperature_range": "300-500 C",
+    "pressure": "1 atm"
+  },
+  "expected_behavior": "Efficiency should remain approximately stable.",
+  "constraints": [
+    "Do not exceed 650 C.",
+    "Consider measurement artifacts."
+  ],
+  "researcher_hypotheses": [],
+  "sources": []
+}

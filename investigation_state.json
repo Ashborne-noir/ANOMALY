@@ -1,0 +1,312 @@
+{
+  "case": {
+    "case_id": "PIONEER_01",
+    "domain": "spacecraft_navigation",
+    "objective": "Investigate an unexplained long-term acceleration observed in deep-space spacecraft tracking.",
+    "observations": [
+      {
+        "id": "OBS-01",
+        "observation": "Doppler tracking data from two distant spacecraft showed a small, persistent acceleration approximately directed toward the Sun.",
+        "type": "trajectory"
+      },
+      {
+        "id": "OBS-02",
+        "observation": "The effect was small but persisted over a long period of tracking.",
+        "type": "temporal"
+      },
+      {
+        "id": "OBS-03",
+        "observation": "The two spacecraft had broadly similar spacecraft designs and both exhibited the unexpected acceleration.",
+        "type": "cross_spacecraft"
+      },
+      {
+        "id": "OBS-04",
+        "observation": "The spacecraft generated electrical power using radioisotope thermoelectric generators (RTGs).",
+        "type": "power_system"
+      },
+      {
+        "id": "OBS-05",
+        "observation": "The RTGs released substantial thermal energy into space.",
+        "type": "thermal"
+      },
+      {
+        "id": "OBS-06",
+        "observation": "The spacecraft had a large high-gain antenna and other surfaces capable of emitting or reflecting thermal radiation.",
+        "type": "spacecraft_geometry"
+      },
+      {
+        "id": "OBS-07",
+        "observation": "The observed acceleration was approximately constant over substantial portions of the tracking period.",
+        "type": "temporal"
+      },
+      {
+        "id": "OBS-08",
+        "observation": "Navigation models included gravitational forces and known spacecraft forces, but the observed motion initially showed a residual unexplained component.",
+        "type": "model_residual"
+      }
+    ],
+    "constraints": [
+      "Do not assume new physics unless conventional explanations are insufficient.",
+      "Distinguish observations from hypotheses.",
+      "Consider spacecraft-systematic effects before proposing exotic explanations.",
+      "Every major hypothesis must identify supporting and contradicting evidence."
+    ]
+  },
+  "evidence": {
+    "established_observations": [
+      "Doppler tracking of two distant spacecraft revealed a small, persistent acceleration directed approximately toward the Sun (OBS-01).",
+      "The observed acceleration persisted over a long tracking duration (OBS-02).",
+      "The two spacecraft possessed broadly similar designs and both showed the unexplained acceleration (OBS-03).",
+      "Radioisotope thermoelectric generators (RTGs) were used for electrical power generation on the spacecraft (OBS-04).",
+      "Substantial thermal energy was emitted into space by the RTGs (OBS-05).",
+      "The spacecraft featured a large high-gain antenna and additional surfaces that can emit or reflect thermal radiation (OBS-06).",
+      "The magnitude of the acceleration was approximately constant over major portions of the tracking timeline (OBS-07).",
+      "Standard navigation models incorporating gravity and identified spacecraft forces left a residual unexplained motion component (OBS-08)."
+    ],
+    "important_clues": [
+      "The presence of the anomaly across two distinct spacecraft with similar physical configurations suggests a systematic or design-related origin rather than an isolated instrument glitch (OBS-03).",
+      "The presence of high thermal energy output from RTGs alongside asymmetric reflection/emission surfaces (high-gain antenna) provides a potential physical mechanism for anisotropic radiation force (OBS-04, OBS-05, OBS-06).",
+      "The approximately constant nature of the force over long observation windows constrains temporal behavior for candidate forces (OBS-02, OBS-07).",
+      "The directional orientation of the acceleration is approximately aligned toward the Sun (OBS-01)."
+    ],
+    "relationships": [
+      "OBS-01 and OBS-03 connect trajectory tracking to spacecraft hardware design, showing that identical design characteristics correlate with identical anomalous acceleration vectors.",
+      "OBS-04, OBS-05, and OBS-06 link thermal energy generation (RTGs) directly to physical spacecraft geometry (high-gain antenna and surfaces) capable of interacting with radiation.",
+      "OBS-01, OBS-07, and OBS-08 link navigation model residuals to a specific vector (sunward) and temporal behavior (approximately constant over long durations)."
+    ],
+    "uncertainties": [
+      "Whether the net directional thermal radiation force emitted or reflected by the spacecraft geometry is sufficient in magnitude and direction to explain the residual acceleration.",
+      "Whether the acceleration remains strictly constant indefinitely or decays over longer time horizons.",
+      "Whether the residual component stems from onboard spacecraft systematic forces or an external force.",
+      "The exact directional alignment between the thermal radiation anisotropy axis and the sunward Doppler tracking vector."
+    ],
+    "discriminating_evidence": [
+      "Quantitative thermal-recoil modeling and directional analysis of RTG heat radiation reflecting off the high-gain antenna and spacecraft surfaces.",
+      "Temporal tracking of the acceleration magnitude over extended timeframes to evaluate whether it decays synchronously with RTG thermal power output or remains constant.",
+      "Detailed telemetry data on onboard thermal distribution and directional radiation patterns across different operational modes.",
+      "Comparison with deep-space trajectory residuals from spacecraft possessing non-RTG power sources or significantly different structural geometries."
+    ]
+  },
+  "numerical_analysis": {
+    "status": "no_data",
+    "row_count": 0,
+    "numeric_columns": [],
+    "columns": {},
+    "correlations": [],
+    "residuals": [],
+    "patterns": [],
+    "candidate_anomalies": []
+  },
+  "anomaly": {
+    "core_anomalies": [
+      "Unexplained residual acceleration directed approximately toward the Sun observed in Doppler tracking after incorporating standard gravitational and identified non-gravitational models (OBS-01, OBS-08).",
+      "Identical unexplained trajectory residuals appearing across two distinct spacecraft sharing similar structural configurations (OBS-03)."
+    ],
+    "unexpected_patterns": [
+      "The anomalous acceleration maintains an approximately constant magnitude over long observation windows (OBS-02, OBS-07).",
+      "Consistent sunward directional orientation of the residual force vector across different trajectories and times (OBS-01)."
+    ],
+    "possible_relationships_to_investigate": [
+      "Correlation between shared physical spacecraft geometry (high-gain antenna, reflective surfaces) and the observed directional vector of the force (OBS-03, OBS-06).",
+      "Relationship between high thermal energy generation from onboard RTGs and potential anisotropic radiation emission or reflection off spacecraft structures (OBS-04, OBS-05, OBS-06).",
+      "Coupling between the temporal profile of the force and the thermal decay rate of onboard power systems (OBS-05, OBS-07)."
+    ],
+    "contradictions_or_tensions": [
+      "The observation of an approximately constant acceleration magnitude over extended timelines (OBS-07) stands in tension with the expected temporal decay of RTG thermal power generation (OBS-04, OBS-05).",
+      "Standard celestial mechanics and spacecraft force models predict zero motion residual, contradicting persistent Doppler tracking discrepancies (OBS-01, OBS-08)."
+    ],
+    "questions_for_hypothesis_agent": [
+      "Is the observed vector strictly aligned toward the Sun, toward Earth (line of sight), or along the spacecraft physical symmetry/spin axis?",
+      "Does anisotropic thermal recoil modeling produce sufficient force magnitude and correct directional alignment to explain the residual acceleration without exceeding thermal energy budgets?",
+      "Does temporal tracking over longer horizons reveal a subtle decay in acceleration magnitude proportional to RTG power decay, or is the force genuinely time-invariant?",
+      "Could an unmodeled external environmental force produce an identical sunward residual across independent spacecraft trajectories?"
+    ]
+  },
+  "hypotheses": {
+    "hypotheses": [
+      {
+        "id": "H1",
+        "name": "Anisotropic Spacecraft Thermal Radiation Recoil",
+        "explanation": "The residual acceleration is caused by anisotropic thermal emission or reflection of heat generated by onboard Radioisotope Thermoelectric Generators (RTGs) reflecting off spacecraft structural components (such as the high-gain antenna), imparting a net momentum flux along the spacecraft symmetry/spin axis.",
+        "supporting_evidence": [
+          "Correlation between shared physical spacecraft geometry/reflective surfaces and the observed direction of the force vector (OBS-03, OBS-06).",
+          "Presence of high thermal energy generation from onboard RTGs capable of imparting recoil forces (OBS-04, OBS-05).",
+          "Appearance of identical unexplained residuals across two distinct spacecraft sharing similar structural configurations (OBS-03)."
+        ],
+        "contradicting_evidence": [
+          "The observed approximately constant acceleration magnitude over long observation windows (OBS-02, OBS-07) stands in tension with the expected temporal decay rate of RTG thermal power generation (OBS-04, OBS-05).",
+          "Current observational correlation between force direction and physical geometry does not by itself establish direct physical causation without quantitative thermal modeling."
+        ],
+        "discriminating_test": "Construct a high-fidelity finite-element thermal model of spacecraft geometry and compare calculated thermal recoil decay profiles against long-baseline Doppler residual time-series to check for subtle decay.",
+        "current_plausibility": "medium"
+      },
+      {
+        "id": "H2",
+        "name": "Systematic Tracking, Propagation, or Frame Modeling Artifact",
+        "explanation": "The observed residual acceleration is an unmodeled systematic error in Doppler signal processing, radio propagation modeling, or line-of-sight coordinate transformations, resulting in an apparent trajectory deviation rather than a physical acceleration acting on spacecraft mass.",
+        "supporting_evidence": [
+          "The anomaly is detected via residual analysis in Doppler tracking data (OBS-01, OBS-08).",
+          "The force vector maintains a consistent orientation approximately aligned toward the Sun/Earth line-of-sight (OBS-01)."
+        ],
+        "contradicting_evidence": [
+          "Standard gravitational and identified non-gravitational models have already been incorporated into trajectory analysis without resolving the Doppler discrepancies (OBS-01, OBS-08).",
+          "Identical residual profiles are observed independently across two distinct spacecraft trajectories (OBS-03), reducing the likelihood of a localized single-station receiver artifact."
+        ],
+        "discriminating_test": "Perform cross-validation of Doppler tracking data against independent positional measurements (such as range or optical tracking) and test for systematic variations correlated with Earth-Sun-spacecraft orbital geometry changes.",
+        "current_plausibility": "medium"
+      },
+      {
+        "id": "H3",
+        "name": "Unmodeled External Heliospheric Drag or Mass Distribution Force",
+        "explanation": "The spacecraft are experiencing a persistent physical acceleration caused by an unmodeled external environmental interaction, such as drag from heliospheric dust/gas or gravitational influence from an unidentified solar system mass distribution.",
+        "supporting_evidence": [
+          "The residual force exhibits a consistent sunward orientation across different trajectories and observation periods (OBS-01, OBS-03).",
+          "The acceleration magnitude remains approximately constant over extended observation windows (OBS-02, OBS-07), consistent with traversal through a roughly uniform background environment."
+        ],
+        "contradicting_evidence": [
+          "Standard celestial mechanics models predict zero trajectory residual after accounting for known gravitational sources (OBS-01, OBS-08).",
+          "An environmental drag force typically scales with spacecraft cross-sectional area and relative velocity, which is difficult to reconcile with a constant sunward vector across varied trajectories without specific fine-tuning."
+        ],
+        "discriminating_test": "Compare residual acceleration profiles between spacecraft with substantially different area-to-mass ratios and velocities traversing similar heliospheric distances.",
+        "current_plausibility": "low"
+      }
+    ],
+    "key_unknowns": [
+      "Whether the residual vector is precisely aligned with the Sun, the Earth line-of-sight, or the spacecraft physical symmetry/spin axis.",
+      "Whether long-baseline tracking data contains a subtle, previously unresolved exponential decay in acceleration magnitude proportional to RTG power decay.",
+      "The exact fraction of total RTG thermal output that is radiated anisotropically by the spacecraft structural geometry.",
+      "Current evidence is insufficient to definitively separate structural/thermal causes from tracking systematic errors without quantitative thermal modeling and multi-angle trajectory analysis."
+    ],
+    "recommended_next_tests": [
+      "Develop a full-geometry anisotropic thermal radiation model incorporating RTG thermal decay profiles and surface reflectivity characteristics.",
+      "Decompose tracking residuals into separate vectors (Sun-directed, Earth-directed, spin-axis-directed) over varying Earth-Sun-spacecraft geometry angles.",
+      "Perform extended time-series statistical analysis on Doppler residuals to bound or detect potential magnitude decay over long observation horizons."
+    ]
+  },
+  "critic": {
+    "critiques": [
+      {
+        "hypothesis_id": "H1",
+        "main_weaknesses": [
+          "Direct contradiction between the observed approximately constant acceleration magnitude over long observation windows (OBS-02, OBS-07) and the expected exponential temporal decay of RTG thermal power generation (OBS-04, OBS-05).",
+          "Observational correlation between geometry/RTG presence and force direction (OBS-03, OBS-06) confuses correlation with causation; without quantitative thermal momentum flux modeling, physical sufficiency remains unproven."
+        ],
+        "unsupported_assumptions": [
+          "Assumes that thermal emission/reflection off spacecraft geometry produces sufficient net momentum flux to account for the observed acceleration magnitude.",
+          "Assumes the net thermal recoil vector maintains continuous alignment toward the Sun rather than strictly along the spacecraft physical spin/symmetry axis as orientation changes relative to the Sun."
+        ],
+        "evidence_that_would_falsify": [
+          "Long-baseline Doppler residual time-series demonstrating complete time-invariance (zero decay) over observation horizons exceeding multiple RTG power decay half-lives.",
+          "Quantitative finite-element thermal radiation modeling proving that maximum available anisotropic thermal momentum flux is substantially smaller than the force required for the observed residual."
+        ],
+        "alternative_explanation": "The residual force is an unmodeled systematic tracking artifact along the Earth-spacecraft line of sight (H2) or an external environmental interaction independent of internal power decay (H3).",
+        "severity": "medium"
+      },
+      {
+        "hypothesis_id": "H2",
+        "main_weaknesses": [
+          "Fails to explain why two distinct spacecraft sharing similar structural configurations exhibit identical residual acceleration profiles across independent trajectories (OBS-03).",
+          "Assumes unmodeled errors remain in Doppler processing or coordinate transformations despite standard gravitational and non-gravitational models already being incorporated (OBS-01, OBS-08)."
+        ],
+        "unsupported_assumptions": [
+          "Assumes a persistent systematic error exists in line-of-sight Doppler processing or frame transformations that mimics a constant, physical sunward acceleration force.",
+          "Assumes tracking artifacts manifest identically across different observation times, geometries, and independent spacecraft trajectories."
+        ],
+        "evidence_that_would_falsify": [
+          "Cross-validation of trajectory residuals using independent non-Doppler positional measurements (e.g., direct range timing or optical tracking) that confirm physical trajectory displacement."
+        ],
+        "alternative_explanation": "A real physical force acting on the spacecraft mass, such as internal anisotropic thermal recoil (H1).",
+        "severity": "medium"
+      },
+      {
+        "hypothesis_id": "H3",
+        "main_weaknesses": [
+          "Heliospheric drag forces scale with spacecraft cross-sectional area, relative velocity, and local density, contradicting the observation of a constant acceleration magnitude across varied trajectories (OBS-02, OBS-07).",
+          "Gravitational force from an unmodeled mass distribution would exhibit distance-scaling ($1/r^2$) and affect celestial bodies, contradicting a constant sunward vector (OBS-01, OBS-07) and existing gravitational model fits (OBS-08)."
+        ],
+        "unsupported_assumptions": [
+          "Assumes the existence of a uniform background heliospheric medium or mass distribution capable of exerting a constant sunward force without violating established celestial mechanics models.",
+          "Assumes environmental drag remains constant despite changing heliospheric distance and spacecraft velocity."
+        ],
+        "evidence_that_would_falsify": [
+          "Demonstration that the residual acceleration magnitude is invariant to changes in spacecraft cross-sectional area, mass, or velocity.",
+          "Direct measurements showing local heliospheric density is orders of magnitude lower than required to produce observable drag forces."
+        ],
+        "alternative_explanation": "Internal thermal radiation recoil (H1) or a systematic line-of-sight tracking artifact (H2).",
+        "severity": "high"
+      }
+    ],
+    "cross_hypothesis_comparison": [
+      {
+        "hypothesis_id": "H1",
+        "relative_strength": "Moderate",
+        "main_reason": "Provides a physically grounded mechanism linked to shared spacecraft geometry (OBS-03, OBS-06), but suffers from severe tension with observed force constancy vs. expected RTG power decay (OBS-05, OBS-07)."
+      },
+      {
+        "hypothesis_id": "H2",
+        "relative_strength": "Moderate",
+        "main_reason": "Directly addresses the observation method (Doppler residual analysis OBS-01, OBS-08), but struggles to explain identical residual profiles across two independent spacecraft trajectories (OBS-03)."
+      },
+      {
+        "hypothesis_id": "H3",
+        "relative_strength": "Weak",
+        "main_reason": "Requires unphysically fine-tuned environmental properties or mass distributions to explain a constant sunward vector without exhibiting expected velocity, area, or $1/r^2$ scaling."
+      }
+    ],
+    "critical_unknowns": [
+      "The precise directional orientation of the force vector: whether strictly aligned toward the Sun, toward Earth (line-of-sight), or along the spacecraft physical spin/symmetry axis.",
+      "The presence or absence of a subtle exponential decay in residual magnitude over long time baselines matching RTG thermal decay.",
+      "The quantitative momentum flux budget available from anisotropic thermal radiation and reflection off spacecraft surfaces.",
+      "Current evidence is explicitly insufficient to uniquely distinguish between internal thermal recoil (H1), signal processing artifacts (H2), and external forces (H3)."
+    ],
+    "recommended_discriminating_tests": [
+      "Deconstruct Doppler tracking residuals into distinct geometric vector components (Sun-directed, Earth-line-of-sight, and spacecraft spin axis) across varying Earth-Sun-spacecraft orbital angles.",
+      "Construct a finite-element thermal model of spacecraft geometry to compute expected thermal momentum flux and compare predicted recoil decay curves against long-baseline temporal residual data.",
+      "Compare Doppler-derived residuals against independent non-Doppler tracking measurements (such as range timing) to test whether trajectory discrepancies represent physical acceleration or measurement artifacts.",
+      "Evaluate residual acceleration profiles across spacecraft with different cross-sectional areas and relative velocities to test for area/velocity scaling (falsifying environmental drag in H3 if invariant)."
+    ]
+  },
+  "testing": {
+    "selection": {
+      "selected_tool": "thermal_recoil_estimation",
+      "target_hypothesis": "H1",
+      "reason": "To quantitatively estimate the acceleration produced by anisotropic RTG thermal radiation and determine whether thermal recoil is physically sufficient to account for the residual acceleration.",
+      "required_inputs": [
+        "thermal_power_watts",
+        "direction_factor",
+        "spacecraft_mass_kg"
+      ]
+    },
+    "execution": {
+      "tool": "thermal_recoil_estimation",
+      "target_hypothesis": "H1",
+      "inputs": {
+        "thermal_power_watts": 2000,
+        "direction_factor": 0.05,
+        "spacecraft_mass_kg": 250,
+        "source": "demonstration_parameters",
+        "historical_data_available": false,
+        "note": "The current blind case does not contain numerical thermal telemetry, so these values are demonstration parameters."
+      },
+      "result": {
+        "recoil_force_N": 3.3356409519815204e-07,
+        "recoil_acceleration_m_s2": 1.334256380792608e-09
+      }
+    }
+  },
+  "validation": {
+    "valid": true,
+    "hypothesis_ids": [
+      "H1",
+      "H2",
+      "H3"
+    ],
+    "critic_ids": [
+      "H1",
+      "H2",
+      "H3"
+    ],
+    "missing_from_critic": [],
+    "unexpected_in_critic": []
+  }
+}

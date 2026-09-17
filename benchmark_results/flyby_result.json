@@ -1,0 +1,288 @@
+{
+  "case": {
+    "case_id": "BENCH_FLYBY_01",
+    "domain": "celestial_mechanics",
+    "objective": "Investigate small unexplained velocity changes reported during some Earth gravity-assist flybys.",
+    "observations": [
+      {
+        "id": "F-01",
+        "observation": "Precise orbit reconstructions for some Earth gravity-assist flybys show small discrepancies between pre-flyby and post-flyby asymptotic velocity estimates.",
+        "type": "trajectory"
+      },
+      {
+        "id": "F-02",
+        "observation": "The effect is extremely small relative to the spacecraft's overall velocity and requires precise tracking to detect.",
+        "type": "magnitude"
+      },
+      {
+        "id": "F-03",
+        "observation": "The anomaly has been reported for multiple spacecraft/flybys, including Galileo, NEAR, and Rosetta cases discussed in the literature.",
+        "type": "cross_mission"
+      },
+      {
+        "id": "F-04",
+        "observation": "Other Earth flybys, including a well-tracked later case, have not shown the same anomalous velocity change.",
+        "type": "null_case"
+      },
+      {
+        "id": "F-05",
+        "observation": "The reported effect depends on comparing extremely precise tracking data with gravitational-assist trajectory models.",
+        "type": "model_sensitivity"
+      },
+      {
+        "id": "F-06",
+        "observation": "Candidate explanations discussed for such discrepancies include conventional modelling/measurement effects and hypotheses involving unmodelled physical effects.",
+        "type": "hypothesis_space"
+      },
+      {
+        "id": "F-07",
+        "observation": "The supplied evidence does not identify a single mechanism that quantitatively explains every reported and null case.",
+        "type": "uncertainty"
+      }
+    ],
+    "constraints": [
+      "Do not force a definitive explanation.",
+      "Compare anomalous and null flybys.",
+      "Separate empirical correlations from causal explanations.",
+      "Consider tracking, atmosphere, Earth orientation, gravity modelling, spacecraft properties, and other conventional systematics before exotic physics.",
+      "If the evidence remains insufficient, identify the measurement or experiment that would discriminate among hypotheses."
+    ]
+  },
+  "evidence": {
+    "established_observations": [
+      "Orbit reconstructions for certain Earth gravity-assist flybys show small discrepancies between pre-flyby and post-flyby asymptotic velocity estimates (F-01).",
+      "The reported velocity discrepancy is extremely small relative to the overall spacecraft velocity and requires high-precision tracking to detect (F-02).",
+      "The anomalous velocity discrepancy has been reported across multiple spacecraft and flyby events, including cases involving Galileo, NEAR, and Rosetta (F-03).",
+      "The effect is not universal; other Earth flybys, including a well-tracked later case, exhibit no anomalous velocity change (F-04).",
+      "Identification of the effect depends directly on comparing precise tracking data against gravitational-assist trajectory models (F-05)."
+    ],
+    "important_clues": [
+      "The presence of both anomalous cases and well-tracked null cases indicates that the velocity discrepancy is event- or configuration-dependent rather than a uniform property of all Earth flybys (F-03, F-04).",
+      "The detection of the anomaly is highly sensitive to tracking precision and the specific trajectory models used (F-02, F-05).",
+      "Candidate explanations currently span conventional measurement/modeling effects (e.g., tracking, atmospheric interaction, gravity field, Earth orientation, spacecraft characteristics) as well as unmodelled physical hypotheses (F-06)."
+    ],
+    "relationships": [
+      "Contrast between positive detections (F-01, F-03) and null cases (F-04): The discrepancy occurs in specific flybys but is absent in others under high-precision tracking.",
+      "Interdependence of detection and modeling (F-02, F-05): The anomaly exists at the threshold of measurement precision and depends on comparisons between tracking data and trajectory models.",
+      "Gap between candidate hypotheses and observation set (F-06, F-07): Candidate explanations exist, but no single proposed mechanism quantitatively unifies all positive flyby detections and null cases."
+    ],
+    "uncertainties": [
+      "The underlying cause of the velocity discrepancies remains unidentified (F-06, F-07).",
+      "No single quantitative mechanism currently accounts for both the observed anomalous flybys and the confirmed null flybys (F-07).",
+      "It is uncertain whether the discrepancies arise from conventional systematic modeling errors or unmodelled physical phenomena (F-06)."
+    ],
+    "discriminating_evidence": [
+      "A systematic comparative parameter matrix contrasting anomalous flybys (Galileo, NEAR, Rosetta) against null flybys across trajectory geometry, Earth orientation, atmospheric entry/passage depth, gravity field modeling, tracking system configurations, and spacecraft-specific properties.",
+      "High-precision tracking re-analyses and target flyby measurements designed to systematically test and isolate conventional systematic models\u2014including higher-order Earth gravity models, Earth rotation/orientation variations, atmospheric drag/refraction, and spacecraft thermal/outgassing dynamics\u2014to determine if conventional systematics fully resolve the discrepancy."
+    ]
+  },
+  "anomaly": {
+    "core_anomalies": [
+      "Unexplained velocity discrepancies between pre-flyby and post-flyby asymptotic velocity estimates during Earth gravity-assist maneuvers (F-01).",
+      "Selective occurrence of the velocity discrepancy across different Earth flyby events despite similar high-precision tracking environments (F-03, F-04)."
+    ],
+    "unexpected_patterns": [
+      "The velocity discrepancy appears in specific flyby events (e.g., Galileo, NEAR, Rosetta) but is entirely absent in other well-tracked flybys (F-03, F-04).",
+      "Detection of the phenomenon is constrained to the boundary of high-precision tracking resolution and sensitive trajectory modeling (F-02, F-05)."
+    ],
+    "possible_relationships_to_investigate": [
+      "The relationship between specific flyby parameters (e.g., trajectory geometry, Earth orientation, passage depth, spacecraft properties) and whether an anomaly occurs (F-03, F-04).",
+      "The relationship between gravitational-assist trajectory modeling precision, tracking system configuration, and the apparent magnitude of asymptotic velocity shifts (F-02, F-05, F-06)."
+    ],
+    "contradictions_or_tensions": [
+      "Tension between positive anomaly detections (Galileo, NEAR, Rosetta) and confirmed null cases where no anomalous velocity change is observed (F-03, F-04).",
+      "Discrepancy between proposed candidate explanations (both conventional and unmodelled physical hypotheses) and the lack of a single quantitative mechanism that successfully explains both positive detections and null flybys (F-06, F-07)."
+    ],
+    "questions_for_hypothesis_agent": [
+      "What specific geometric, spacecraft, or environmental parameters differentiate flyby events exhibiting velocity discrepancies from those exhibiting null results?",
+      "Can conventional modeling errors (e.g., Earth orientation variations, higher-order gravity models, atmospheric effects, or thermal outgassing) quantitatively account for positive cases without erroneously predicting anomalies in null cases?",
+      "What single framework or set of variables could quantitatively unify both the observed positive velocity discrepancies and the confirmed null flybys?"
+    ]
+  },
+  "hypotheses": {
+    "hypotheses": [
+      {
+        "id": "H1",
+        "name": "Systematic Spacecraft-Specific Perturbations and Tracking Instrumentation Artifacts",
+        "explanation": "The observed velocity discrepancies are caused by conventional systematic artifacts, such as unmodeled spacecraft-specific non-gravitational forces (e.g., thermal recoil outgassing, attitude maneuvers, or asymmetric spacecraft geometry) combined with tracking system configuration differences across missions. These effects manifest near the boundary of tracking resolution and sensitive trajectory modeling.",
+        "supporting_evidence": [
+          "Detection of the phenomenon is constrained to the boundary of high-precision tracking resolution and sensitive trajectory modeling (F-02, F-05).",
+          "Discrepancies occur selectively across different spacecraft flyby events (F-03, F-04), consistent with differences in spacecraft design, thermal properties, and tracking system configurations."
+        ],
+        "contradicting_evidence": [
+          "Positive and null flyby events occurred under similar high-precision tracking environments (F-03, F-04).",
+          "Existing candidate conventional explanations currently lack a single quantitative mechanism that successfully models positive detections without erroneously predicting anomalies in null cases (F-06, F-07)."
+        ],
+        "discriminating_test": "Re-analyze raw Doppler and range tracking data across both positive and null flyby events using independent orbit determination software packages with standardized, high-fidelity spacecraft thermal and outgassing models.",
+        "current_plausibility": "medium"
+      },
+      {
+        "id": "H2",
+        "name": "Trajectory-Geometry-Dependent Conventional Environmental Modeling Errors",
+        "explanation": "Unmodeled or incompletely modeled conventional environmental factors (e.g., higher-order Earth gravitational multipoles, atmospheric drag variations, or Earth orientation parameter variations) influence the trajectory. The apparent anomaly appears selectively because the magnitude of these forces is highly sensitive to specific flyby geometric parameters (such as passage depth, Earth orientation, and trajectory inclination).",
+        "supporting_evidence": [
+          "Specific flyby parameters such as trajectory geometry, Earth orientation, passage depth, and spacecraft properties correlate with whether an anomaly occurs (F-03, F-04).",
+          "Positive anomaly detections occur during specific Earth flyby geometries (Galileo, NEAR, Rosetta) whereas other flybys yield null results (F-03, F-04)."
+        ],
+        "contradicting_evidence": [
+          "Current evidence is insufficient to prove causation rather than mere correlation between trajectory geometry and velocity shifts.",
+          "Conventional environmental modeling adjustments have not yet yielded a single quantitative framework that predicts positive cases while preserving confirmed null cases (F-06, F-07)."
+        ],
+        "discriminating_test": "Perform high-resolution sensitivity simulations integrating ultra-high-degree Earth gravity fields and atmospheric density profiles strictly evaluated against the exact geometric trajectories of both positive and null flyby cases.",
+        "current_plausibility": "medium"
+      },
+      {
+        "id": "H3",
+        "name": "Unmodeled Trajectory-Velocity-Dependent Dynamical Interaction",
+        "explanation": "An unmodeled physical effect or force acts on spacecraft during hyperbolic Earth gravity assists, where the magnitude of the force is a function of specific kinematic or geometric parameters (e.g., incoming/outgoing asymptotic velocity vectors or latitude angles). This produces measurable velocity shifts only when specific geometric criteria are satisfied during the maneuver.",
+        "supporting_evidence": [
+          "Directly accounts for the clear separation between positive flyby detections (Galileo, NEAR, Rosetta) and confirmed null flybys (F-03, F-04).",
+          "Explains the selective occurrence pattern that uniform conventional error models struggle to reconcile (F-06, F-07)."
+        ],
+        "contradicting_evidence": [
+          "No validated single quantitative mechanism currently exists that demonstrates this force without relying on insufficient or incomplete evidence (F-06, F-07).",
+          "The effect is constrained to the boundary of measurement precision (F-02, F-05), making it difficult to distinguish from subtle systematic modeling artifacts.",
+          "Claiming new physical mechanisms is unwarranted based on the current empirical data."
+        ],
+        "discriminating_test": "Formulate a candidate empirical parameterization based on incoming and outgoing asymptotic trajectory vectors, and test its quantitative predictions against blindly analyzed archival flyby data or pre-maneuver trajectory predictions for future planetary gravity assists.",
+        "current_plausibility": "low"
+      }
+    ],
+    "key_unknowns": [
+      "Whether the correlation between flyby parameters (geometry, Earth orientation, passage depth) and anomaly detection represents direct causation or a selection artifact.",
+      "The precise quantitative contribution of spacecraft-specific thermal outgassing and attitude control maneuvers during the close-approach phase for positive versus null flyby events.",
+      "Whether tracking resolution boundaries and orbit determination software choices introduce consistent subtle biases in asymptotic velocity estimation."
+    ],
+    "recommended_next_tests": [
+      "Conduct an independent, multi-team re-analysis of raw telemetry and tracking data for all positive (Galileo, NEAR, Rosetta) and null flyby events using unified physical standards.",
+      "Perform full-scale sensitivity modeling of spacecraft-specific non-gravitational perturbations (thermal radiation, outgassing, drag) during close approach.",
+      "Map all historical flyby trajectories into a multi-dimensional parameter space (latitude, velocity, passage depth, Earth orientation) to determine if a rigorous mathematical boundary separates positive anomaly detections from null results."
+    ]
+  },
+  "critic": {
+    "critiques": [
+      {
+        "hypothesis_id": "H1",
+        "main_weaknesses": [
+          "Fails to provide a single quantitative mechanism that explains why positive and null flyby events occur under similar high-precision tracking environments (F-03, F-04, F-06).",
+          "Does not account for why spacecraft-specific non-gravitational forces would systematically produce asymptotic velocity discrepancies in some flyby geometries but remain undetectable or absent in others (F-03, F-07)."
+        ],
+        "unsupported_assumptions": [
+          "Assumes that unmodeled spacecraft-specific non-gravitational perturbations (e.g., thermal outgassing, asymmetric geometry) are large enough to account for the observed magnitude of asymptotic velocity shifts.",
+          "Assumes that tracking system configuration variations across missions introduce selective systematic errors rather than random measurement noise."
+        ],
+        "evidence_that_would_falsify": [
+          "Demonstration through rigorous physical modeling that maximum plausible spacecraft outgassing and thermal recoil forces are quantitatively insufficient by orders of magnitude to produce the estimated asymptotic velocity discrepancies.",
+          "Observation of identical positive velocity discrepancies across two spacecraft with radically different physical designs, thermal profiles, and tracking configurations along identical flyby trajectories."
+        ],
+        "alternative_explanation": "The velocity discrepancies are driven by unmodeled trajectory-geometry-dependent environmental forces or orientation modeling errors (H2) rather than individual spacecraft artifacts.",
+        "severity": "medium"
+      },
+      {
+        "hypothesis_id": "H2",
+        "main_weaknesses": [
+          "Mistakes correlation between flyby geometric parameters and anomaly occurrence for direct physical causation (F-03, F-04).",
+          "Current conventional environmental modeling adjustments have failed to yield a quantitative framework that predicts positive cases while correctly maintaining null results (F-06, F-07)."
+        ],
+        "unsupported_assumptions": [
+          "Assumes environmental forces (e.g., higher-order gravity multipoles or atmospheric density variations) vary steeply enough with trajectory geometry to induce shifts in positive cases while leaving null cases completely unaffected.",
+          "Assumes standard Earth orientation and gravity field models contain unmodeled errors large enough to impact asymptotic velocity calculations at close approach."
+        ],
+        "evidence_that_would_falsify": [
+          "Comprehensive sensitivity analysis showing that maximum upper bounds on unmodeled Earth gravitational multipoles and atmospheric variations cannot quantitatively generate the observed velocity shifts.",
+          "Detection of positive anomalies during flybys whose passage depth, Earth orientation, and geometry fall entirely within the parameter space of confirmed null flybys."
+        ],
+        "alternative_explanation": "The discrepancies result from localized spacecraft-specific non-gravitational force artifacts (H1) operating near tracking resolution limits.",
+        "severity": "medium"
+      },
+      {
+        "hypothesis_id": "H3",
+        "main_weaknesses": [
+          "Proposes an unmodeled physical dynamic interaction without providing a validated, testable quantitative formulation (F-06, F-07).",
+          "Invokes new physical dynamics for a phenomenon that is strictly constrained to the boundary of measurement precision and trajectory modeling sensitive resolution (F-02, F-05), where systematic noise and artifact fitting are highly probable.",
+          "Fails to rule out conventional combinations of spacecraft artifacts (H1) and environmental modeling errors (H2) before claiming unmodeled dynamics."
+        ],
+        "unsupported_assumptions": [
+          "Assumes that the velocity discrepancy is caused by a novel trajectory-velocity-dependent physical force rather than unmodeled conventional systematic errors.",
+          "Assumes that the selective pattern between positive and null flybys reflects a fundamental physical threshold rather than a modeling artifact."
+        ],
+        "evidence_that_would_falsify": [
+          "Successful quantitative resolution of all positive flyby anomalies using corrected conventional spacecraft thermal or environmental gravity models.",
+          "A flyby occurring with incoming/outgoing velocity vectors matching a candidate H3 mathematical formulation that yields a confirmed null velocity shift."
+        ],
+        "alternative_explanation": "Residual systematic tracking biases combined with unmodeled conventional spacecraft perturbations (H1) or trajectory modeling limits (F-02, F-05).",
+        "severity": "high"
+      }
+    ],
+    "cross_hypothesis_comparison": [
+      {
+        "hypothesis_id": "H1",
+        "relative_strength": "Moderate",
+        "main_reason": "Relies strictly on established conventional physical mechanisms (spacecraft outgassing, tracking artifacts), but lacks a unified quantitative model to explain why similar tracking environments yield both positive and null flybys (F-03, F-06)."
+      },
+      {
+        "hypothesis_id": "H2",
+        "relative_strength": "Moderate",
+        "main_reason": "Aligns with observed correlations between flyby geometry and anomaly occurrence (F-03, F-04), but risks confusing correlation with causation and currently lacks a quantitative mechanism reconciling positive and null cases (F-06, F-07)."
+      },
+      {
+        "hypothesis_id": "H3",
+        "relative_strength": "Low",
+        "main_reason": "Speculates unmodeled physical interactions without a quantitative mechanism, attempting to explain phenomena located at the threshold of measurement precision (F-02, F-05) where conventional explanations have not been exhaustively ruled out."
+      }
+    ],
+    "critical_unknowns": [
+      "The available evidence is currently insufficient to distinguish between spacecraft artifacts (H1), environmental modeling errors (H2), and unmodeled physical dynamics (H3) due to lack of a quantitative mechanism spanning both positive and null cases (F-06, F-07).",
+      "Whether the correlation between flyby geometric parameters and anomaly occurrence (F-03, F-04) reflects genuine physical causation or is an artifact of small sample size and observational selection.",
+      "The exact quantitative upper limits of unmodeled non-gravitational forces (e.g., thermal outgassing, attitude thruster firings) for each specific spacecraft during close approach."
+    ],
+    "recommended_discriminating_tests": [
+      "Perform standardized re-processing of raw Doppler and range data for all positive and null flybys using independent orbit determination software, enforcing strict physical upper bounds on spacecraft non-gravitational forces to test if H1 can be falsified.",
+      "Execute high-resolution sensitivity simulations of ultra-high-degree Earth gravity multipoles and atmospheric density variations along the exact trajectories of positive and null flybys to test if H2 can quantitatively account for the discrepancies.",
+      "Formulate a precise mathematical parameterization of the proposed trajectory-velocity interaction (H3) and evaluate its predictions against blindly processed historical flyby tracking data to test for falsification."
+    ]
+  },
+  "testing": {
+    "selection": {
+      "selected_tool": "thermal_recoil_estimation",
+      "target_hypothesis": "H1",
+      "reason": "To evaluate whether anisotropic thermal radiation recoil can quantitatively produce sufficient acceleration to explain the non-gravitational velocity discrepancies proposed in H1.",
+      "required_inputs": [
+        "thermal_power_watts",
+        "direction_factor",
+        "spacecraft_mass_kg"
+      ]
+    },
+    "execution": {
+      "tool": "thermal_recoil_estimation",
+      "target_hypothesis": "H1",
+      "inputs": {
+        "thermal_power_watts": 2000,
+        "direction_factor": 0.05,
+        "spacecraft_mass_kg": 250,
+        "source": "demonstration_parameters",
+        "historical_data_available": false,
+        "note": "The current blind case does not contain numerical thermal telemetry, so these values are demonstration parameters."
+      },
+      "result": {
+        "recoil_force_N": 3.3356409519815204e-07,
+        "recoil_acceleration_m_s2": 1.334256380792608e-09
+      }
+    }
+  },
+  "validation": {
+    "valid": true,
+    "hypothesis_ids": [
+      "H1",
+      "H2",
+      "H3"
+    ],
+    "critic_ids": [
+      "H1",
+      "H2",
+      "H3"
+    ],
+    "missing_from_critic": [],
+    "unexpected_in_critic": []
+  }
+}

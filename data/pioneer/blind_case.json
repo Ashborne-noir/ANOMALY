@@ -1,0 +1,55 @@
+{
+  "case_id": "PIONEER_01",
+  "domain": "spacecraft_navigation",
+  "objective": "Investigate an unexplained long-term acceleration observed in deep-space spacecraft tracking.",
+
+  "observations": [
+    {
+      "id": "OBS-01",
+      "observation": "Doppler tracking data from two distant spacecraft showed a small, persistent acceleration approximately directed toward the Sun.",
+      "type": "trajectory"
+    },
+    {
+      "id": "OBS-02",
+      "observation": "The effect was small but persisted over a long period of tracking.",
+      "type": "temporal"
+    },
+    {
+      "id": "OBS-03",
+      "observation": "The two spacecraft had broadly similar spacecraft designs and both exhibited the unexpected acceleration.",
+      "type": "cross_spacecraft"
+    },
+    {
+      "id": "OBS-04",
+      "observation": "The spacecraft generated electrical power using radioisotope thermoelectric generators (RTGs).",
+      "type": "power_system"
+    },
+    {
+      "id": "OBS-05",
+      "observation": "The RTGs released substantial thermal energy into space.",
+      "type": "thermal"
+    },
+    {
+      "id": "OBS-06",
+      "observation": "The spacecraft had a large high-gain antenna and other surfaces capable of emitting or reflecting thermal radiation.",
+      "type": "spacecraft_geometry"
+    },
+    {
+      "id": "OBS-07",
+      "observation": "The observed acceleration was approximately constant over substantial portions of the tracking period.",
+      "type": "temporal"
+    },
+    {
+      "id": "OBS-08",
+      "observation": "Navigation models included gravitational forces and known spacecraft forces, but the observed motion initially showed a residual unexplained component.",
+      "type": "model_residual"
+    }
+  ],
+
+  "constraints": [
+    "Do not assume new physics unless conventional explanations are insufficient.",
+    "Distinguish observations from hypotheses.",
+    "Consider spacecraft-systematic effects before proposing exotic explanations.",
+    "Every major hypothesis must identify supporting and contradicting evidence."
+  ]
+}
