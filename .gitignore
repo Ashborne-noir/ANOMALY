@@ -1,16 +1,14 @@
-
-.venv/
-.venv/
-__pycache__/
-*.py[cod]
-.env
-.env.*
-!.env.example
-.DS_Store
-
 # Python cache
 __pycache__/
 *.py[cod]
 
 # Virtual environments
 .venv/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
